@@ -21,3 +21,16 @@ a:link {color:#89b4fa}
 a:visited{color:#cba6f7}
 a:hover{color:#91d7e3}
 a:active{color:#eba0ac}
+
+/* status.cafe */
+#statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
