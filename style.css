@@ -8,31 +8,87 @@ body {
   color:#cdd6f4;
 }
 
+p, li, nav {font-family:Rubik; font-size:16px;}
+
 nav {
-  padding:15px 0;
+  padding:5px;
   padding-left:15px;
   width:100%;
   height: 35px;
   background-color:#181825;
-  font-size:25px;
+  font-size:24px;
+  border-bottom:2px solid #11111b;
 }
 
-a:link {color:#89b4fa}
-a:visited{color:#cba6f7}
-a:hover{color:#91d7e3}
-a:active{color:#eba0ac}
+main {
+  display:inline-block;
+  width:800px;
+  margin:0px 15px 15px 15px;
+  padding:15px;
+  background-color:#181825;
+  border:2px solid #11111b;
+}
+
+a:link{color:#89b4fa;text-decoration:none;}
+a:visited{color:#cba6f7;}
+a:hover{color:#91d7e3;}
+a:active{color:#eba0ac;}
+
+#notice {
+  background-color:#313244;
+  margin-bottom:15px;
+  padding:10px;
+  border:1px solid #45475a;
+  border-left:10px solid #45475a;
+}
 
 /* status.cafe */
 #statuscafe {
-    display:inline;
-    padding: .5em;
-    background-color: #181825;
-    border: 1px solid midnightblue;
-    color:#cdd6f4;
+  font-family:JetBrainsMono;
+  width:800px;
+  margin:15px;
+  padding:15px;
+  background-color:#181825;
+  border:2px solid #11111b;
+  /*border-radius:20px;*/
 }
+
 #statuscafe-username {
-    margin-bottom: .5em;
 }
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
+#statuscafe-content{
+  color:#7f849c;
+  font-size:12px;
 }
+
+/* fonts */
+@font-face {
+  font-family: Rubik;
+  src: url(fonts/rubik/rubik-latin-400-normal.woff2);
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(fonts/JetBrainsMono/jetbrains-mono-latin-400-normal.woff2);
+
+/* catppuccin ricing https://catppuccin.com/palette
+ * Function
+
+ * Background Pane        Base       #1e1e2e
+ * Secondary Pane         Crust      #11111b  Mantle    #181825
+ * Surface Elements       Surface 0  #313244  Surface 1 #45475a  Surface 2 #585b70
+ * Overlays               Overlay 0  #6c7086  Overlay 1 #7f849c  Overlay 2 #9399b2
+
+ * Body Copy              Text       #cdd6f4
+ * Main Headline          Text       #cdd6f4
+ * Sub-Headlines, Labels  Subtext 0  #a6adc8  Subtext 1 #bac2de
+ * Subtle                 Overlay 1  #7f849c
+ * On Accent              Base       #1e1e2e
+
+ * Links, URLS            Blue       #89b4fa
+ * Success                Green      #a6e3a1
+ * Warnings               Yellow     #f9e2af
+ * Errors                 Red        #f38ba8
+ * Tags, Pills            Blue       #89b4fa
+ * Selection Background   Overlay 2  #9399b2 (20-30% opacity)
+ * Cursor                 Rosewater  #f5e0dc
+ */
