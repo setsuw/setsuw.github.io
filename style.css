@@ -1,92 +1,10 @@
-* {
-  padding:0px;
-  margin:0px;
-}
-
-body {
-  font-family:JetBrainsMono;
-  background-image:url("pictures/background.png");
-  background-size:cover;
-  color:#ccc;
-}
-
-h1, h2 {
-  text-align:center;
-  font-family:BalooDa2;
-}
-
-main, aside {
-  display:inline-block;
+#main {
+  font-family:'Courier New', monospace;
   width:800px;
-  margin:auto 15px auto 15px;
-  padding:15px;
-  background-color:#181825;
-  border:2px solid #11111b;
 }
 
-.center {
-  display:grid;
-  place-items:center;
-  height:500px;
-}
-
-.wrap{
-  text-align:center;
-}
-.wrap img{
-  display:inline-block;
-  margin:0 8px;
-  max-width:150px;
-  height:auto;
-}
-
-.row{
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  align-items:center;
-}
-.row img{
-  max-width:150px;
-  height:auto;
-  display:block;
-}
-
-aside {
-  float:right;
-  height:100%;
-  width:49%;
-  margin:0px 15px 0px 0px;
-}
-
-a:link{color:#ddd;text-decoration:none;}
-a:visited{color:#ddd;}
-a:hover{color:#ddd;}
-a:active{color:#ddd;}
-
-#notice {
-  position:fixed;
-  bottom:0;
-  width:100%;
-  text-align:center;
-  padding:10px 0;
-  color:#888;
-}
-
-/* status.cafe */
-#statuscafe {
-  height:60px;
-}
-
-#statuscafe-username {
-}
-#statuscafe-content{
-  color:#7f849c;
-  font-size:12px;
-}
-
-/* fonts */
-@font-face {
-  font-family: JetBrainsMono;
-  src: url(fonts/JetBrainsMono/jetbrains-mono-latin-400-normal.woff2);
+@media screen and (max-width: 800px) {
+  #main {
+    width:100%;
   }
+}
