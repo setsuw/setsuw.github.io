@@ -1,6 +1,32 @@
+:root {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+a {
+    color: #89b4fa;
+}
+
+h1 {
+    color: #bac2de;
+}
+
+h2,h3,h4 {
+    color: #a6adc8
+}
+
+body {
+  font-family: 'Courier New', monospace;
+}
+
+hr {
+  height:2px;
+  border-width:0;
+  background-color:#45475a;
+}
+
 #main {
-  font-family:'Courier New', monospace;
-  width:700px;
+  width:800px;
 }
 
 @media screen and (max-width: 800px) {
