@@ -6,6 +6,6 @@ fetch("https://status.cafe/users/suwa/status.json")
       document.getElementById("statuscafe-content").innerHTML = "No status yet."
       return
     }
-    document.getElementById("statuscafe-username").innerHTML = '<a href="https://status.cafe/users/suwa" target="_blank">' + ' ' + r.face + ' ' + r.content + '</a>'
-    document.getElementById("statuscafe-content").innerHTML = r.timeAgo
+    document.getElementById("statuscafe-username").innerHTML = r.face + ' ' + r.content
+    document.getElementById("statuscafe-content").innerHTML = r.timeAgo + ' &#8226; <a href="https://status.cafe/users/suwa" target="_blank">status.cafe</a>'
   })
